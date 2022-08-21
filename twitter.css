@@ -1,0 +1,275 @@
+/*Manual override*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Border for debugging purposes*/
+.border {
+  border: 1px solid red;
+}
+
+/*Defining style for sidebar*/
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  min-height: 100%;
+  width: 20%;
+  border: 1px solid red;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/*Define style for the Twitter logo*/
+.global:first-of-type {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/*Define style that applies to the first 9 items in the flexbox*/
+.global {
+  display: flex;
+  font-size: 1.3em;
+  width: 150px;
+  height: 30px;
+  margin-bottom: 30px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*Define style for the first flex item*/
+.item-1 {
+  margin-right: 5px;
+}
+
+/*Define style for the seconfd flex item*/
+.item-2 {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+
+/*Define style for the tweet button*/
+.tweet {
+  background-color: lightblue;
+  padding: 13px 80px;
+  border: 1px solid white;
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+
+/*Define style for the tweet link*/
+.tweet a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+/*Define style for the profile flex*/
+.triple-items {
+  display: flex;
+  justify-content: flex-start;
+  width: 110%;
+}
+
+/*Define style for avatar icon*/
+.icon-1 {
+  margin-left: 20%;
+}
+
+/*Define style for container containing tweet handle and display name*/
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+/*Define style for more options icon*/
+.icon-2 {
+  margin-left: auto;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/*DONE WITH LEFT SIDEBAR*/
+
+/*RIGHT SIDEBAR BEGINS*/
+.sidebar-2 {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  min-height: 100%;
+  width: 25%;
+  border: 1px solid black;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/*Define style for the search bar*/
+.search {
+  display: flex;
+  width: 92%;
+  align-items: center;
+  padding: 0.5em;
+  color: grey;
+  border-radius: 3em;
+  background: lightgrey;
+}
+
+/*Define style for the search icon*/
+.search-icon {
+  margin: 0 3%;
+}
+
+/*Define style for container housing the entire "relevant people" profile*/
+.relevant-info {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  width: 92%;
+  height: 220px;
+}
+
+/*Define style for the header*/
+.relevant-heading {
+  margin-top: 8px;
+  font-size: 1.2em;
+  display: flex;
+  width: 55%;
+  height: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Define style for container that'll house both the 1st flex containing the profile picture, profile name & handle, following and profile bio */
+.relevant-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Define style for container that'll house profile picture, profile name & handle as well "following"*/
+.first-flex {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+
+/*Define style for container housing profile name & handle*/
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4em;
+  margin-left: -1em;
+}
+
+/*Define style for the following button*/
+.following {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/*Define style for container housing the Twitter account bio*/
+.user-details {
+  margin-left: 1em;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  height: 120px;
+  width: 65%;
+}
+
+/*Define style for container that'll house trends*/
+.trends {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 92%;
+  height: 380px;
+  padding: 0 5px;
+  background-color: lightgrey;
+  margin: 10px 0;
+}
+
+/*Skip adjustment to "trends for you"*/
+.edit {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+/*Define style for global trends list*/
+.global-trends {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 92%;
+}
+
+/*Define style for container housing no.1 1st flex-item*/
+.enter-1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/*Define margin style for all divs in no.1 the 1st flex-item*/
+.global-trends > div {
+  margin-bottom: 0.2em;
+}
+
+/*Push the three dot to the extreme right*/
+.enter-1 div:nth-child(4) {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+/*Space the flex-item*/
+.enter-1 div:nth-child(2) {
+  margin: 0 0.3em;
+}
+
+/*Define style for Direct Message*/
+.direct-message {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Shift New DMS and expand icons to the right*/
+.global-trends .direct-message:nth-child(1) {
+  margin-right: auto;
+}
+
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translate3d(0, -1rem, 0);
+  }
+}
+.bouncing-loader {
+  display: flex;
+  justify-content: center;
+}
+.bouncing-loader > div {
+  width: 1rem;
+  height: 1rem;
+  margin: 3rem 0.2rem;
+  background: #8385aa;
+  border-radius: 50%;
+  animation: bouncing-loader 0.6s infinite alternate;
+}
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
+}

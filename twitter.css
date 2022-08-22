@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1em;
 }
 
 /*Border for debugging purposes*/
@@ -242,34 +243,64 @@
 .direct-message {
   display: flex;
   flex-direction: row;
+  background-color: white;
+  align-items: center;
 }
 
-/*Shift New DMS and expand icons to the right*/
-.global-trends .direct-message:nth-child(1) {
-  margin-right: auto;
+/*Define style for container housing the DM and up arrow icon*/
+.images {
+  margin-left: auto;
+}
+/*END OF THE RIGHT SIDEBAR*/
+
+/*THE FOLLOWING STYLE WILL BE FOR THE MIDDLE OF THE TEXT*/
+main {
+  margin-left: 21%;
+  margin-right: 26%;
 }
 
-@keyframes bouncing-loader {
-  to {
-    opacity: 0.1;
-    transform: translate3d(0, -1rem, 0);
-  }
-}
-.bouncing-loader {
+/*Define style for the first container*/
+.row-1,
+.row-2 {
   display: flex;
-  justify-content: center;
+  margin: 10px 0;
 }
-.bouncing-loader > div {
-  width: 1rem;
-  height: 1rem;
-  margin: 3rem 0.2rem;
-  background: #8385aa;
-  border-radius: 50%;
-  animation: bouncing-loader 0.6s infinite alternate;
+
+/*Define style for the back button*/
+.row-1 > div:nth-child(1) {
+  margin-left: 1em;
 }
-.bouncing-loader > div:nth-child(2) {
-  animation-delay: 0.2s;
+
+/*Define style for the text "Tweet*/
+.row-1 > div:nth-child(2) {
+  margin-left: 1em;
+  font-weight: 700;
+  font-size: 1.3rem;
 }
-.bouncing-loader > div:nth-child(3) {
-  animation-delay: 0.4s;
+
+.row-2 {
+  flex-direction: column;
 }
+
+.row-2-1 {
+  padding: 1em;
+  display: flex;
+}
+
+.ola {
+  margin-bottom: ;
+}
+
+.row-2-1 img {
+  margin-right: 1em;
+}
+
+.dots {
+  margin-left: auto;
+}
+
+/* Define style for the second flex container
+.row-2 {
+  display: flex;
+}
+*/

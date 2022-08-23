@@ -4,12 +4,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
 }
 
 *,
 ::before,
 ::after {
   box-sizing: inherit;
+=======
+  box-sizing: border-box;
+  font-size: 1em;
+>>>>>>> 3f1020b657056289f4b9a9b355f086f090bb16f4
 }
 
 /*Border for debugging purposes*/
@@ -265,7 +270,10 @@
 main {
   margin-left: 21%;
   margin-right: 26%;
+<<<<<<< HEAD
   padding-left: 1em;
+=======
+>>>>>>> 3f1020b657056289f4b9a9b355f086f090bb16f4
 }
 
 /*Define style for the first container*/
@@ -275,6 +283,7 @@ main {
   margin: 10px 0;
 }
 
+<<<<<<< HEAD
 /*Define style for the text "Tweet*/
 .row-1 > div:nth-child(2) {
   margin-left: 1em;
@@ -351,4 +360,43 @@ main {
 .tweet-options {
   display: flex;
   justify-content: space-around;
+=======
+/*Define style for the back button*/
+.row-1 > div:nth-child(1) {
+  margin-left: 1em;
 }
+
+/*Define style for the text "Tweet*/
+.row-1 > div:nth-child(2) {
+  margin-left: 1em;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.row-2 {
+  flex-direction: column;
+>>>>>>> 3f1020b657056289f4b9a9b355f086f090bb16f4
+}
+
+.row-2-1 {
+  padding: 1em;
+  display: flex;
+}
+
+.ola {
+  margin-bottom: ;
+}
+
+.row-2-1 img {
+  margin-right: 1em;
+}
+
+.dots {
+  margin-left: auto;
+}
+
+/* Define style for the second flex container
+.row-2 {
+  display: flex;
+}
+*/

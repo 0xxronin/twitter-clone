@@ -1,8 +1,15 @@
-/*Manual override*/
-* {
+/*RITES OF PASSAGE*/
+:root {
+  font-size: 1em;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
 }
 
 /*Border for debugging purposes*/
@@ -15,6 +22,7 @@
   display: flex;
   flex-direction: column;
   position: fixed;
+  margin-top: -15px;
   left: 0;
   min-height: 100%;
   width: 20%;
@@ -53,7 +61,7 @@
 }
 
 /*Define style for the tweet button*/
-.tweet {
+.tweet-button {
   background-color: lightblue;
   padding: 13px 80px;
   border: 1px solid white;
@@ -62,7 +70,7 @@
 }
 
 /*Define style for the tweet link*/
-.tweet a {
+.tweet-button a {
   font-size: 15px;
   text-decoration: none;
   color: white;
@@ -103,6 +111,7 @@
   display: flex;
   flex-direction: column;
   position: fixed;
+  margin-top: -15px;
   right: 0;
   min-height: 100%;
   width: 25%;
@@ -256,6 +265,7 @@
 main {
   margin-left: 21%;
   margin-right: 26%;
+  padding-left: 1em;
 }
 
 /*Define style for the first container*/
@@ -263,11 +273,6 @@ main {
 .row-2 {
   display: flex;
   margin: 10px 0;
-}
-
-/*Define style for the back button*/
-.row-1 > div:nth-child(1) {
-  margin-left: 1em;
 }
 
 /*Define style for the text "Tweet*/
@@ -282,12 +287,8 @@ main {
 }
 
 .row-2-1 {
-  padding: 1em;
+  padding: 1em 1em 1em 0;
   display: flex;
-}
-
-.ola {
-  margin-bottom: ;
 }
 
 .row-2-1 img {
@@ -298,8 +299,56 @@ main {
   margin-left: auto;
 }
 
-/* Define style for the second flex container
-.row-2 {
-  display: flex;
+/*Define style for the account's tweet*/
+.tweet {
+  padding: 0.5em 0;
+  margin-right: 2em;
+  font-size: 1.6rem;
 }
-*/
+
+/*Define flex for the time and date of the tweet*/
+.tweet-details {
+  display: flex;
+  margin: 1em 1em 0 0;
+}
+
+/*Define style for the tweet details padding */
+.tweet-details div {
+  padding: 0.2em;
+}
+
+/*Define style for the 3rd flex item*/
+.row-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Define style for the horizontal line*/
+.horizontal {
+  width: 97%;
+  margin-top: -0.9em;
+  margin-left: -0.1em;
+  padding-left: 0.1em;
+}
+
+/*Define style for tweet details 2*/
+.tweet-details-2 {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+/*Define style for elements of tweet details 2*/
+.tweet-details-2 > div {
+  font-size: 1.1rem;
+  padding: 0 0.5em;
+}
+
+.row-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-options {
+  display: flex;
+  justify-content: space-around;
+}

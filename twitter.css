@@ -267,7 +267,6 @@
 main {
   margin-left: 21%;
   margin-right: 26%;
-  padding-left: 1em;
 }
 
 /*Define style for the first container*/
@@ -294,7 +293,14 @@ main {
 }
 
 .row-2-1 img {
-  margin-right: 1em;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+/*Define style for account display name and handle*/
+.ola-container {
+  font-size: 1.1rem;
+  padding-top: 0.5em;
 }
 
 .dots {
@@ -303,15 +309,15 @@ main {
 
 /*Define style for the account's tweet*/
 .tweet {
-  padding: 0.5em 0;
-  margin-right: 2em;
+  margin: 0 0.5em;
   font-size: 1.6rem;
 }
 
 /*Define flex for the time and date of the tweet*/
 .tweet-details {
+  font-size: 1rem;
   display: flex;
-  margin: 1em 1em 0 0;
+  margin-top: 1em;
 }
 
 /*Define style for the tweet details padding */
@@ -328,21 +334,22 @@ main {
 /*Define style for the horizontal line*/
 .horizontal {
   width: 97%;
-  margin-top: -0.9em;
-  margin-left: -0.1em;
-  padding-left: 0.1em;
+  padding-left: 1em;
+  margin-top: 1em;
 }
 
 /*Define style for tweet details 2*/
 .tweet-details-2 {
   display: flex;
-  margin-bottom: 1em;
+  padding: 0.9em 0 0 0.5em;
 }
 
 /*Define style for elements of tweet details 2*/
 .tweet-details-2 > div {
   font-size: 1.1rem;
-  padding: 0 0.5em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-top: 0;
 }
 
 .row-4 {
@@ -350,6 +357,9 @@ main {
   flex-direction: column;
 }
 
+.row-4 .horizontal {
+  margin-top: 3px;
+}
 .tweet-options {
   display: flex;
   justify-content: space-around;
@@ -360,32 +370,33 @@ main {
   margin-left: 1em;
 }
 
-/*Define style for the text "Tweet*/
-.row-1 > div:nth-child(2) {
+/*Define style for tweet option*/
+.tweet-option {
+  display: flex;
+}
+
+.option-1 {
+  display: flex;
+  margin-left: 0.5em;
+  align-items: center;
+}
+
+.tweet-your-reply {
   margin-left: 1em;
-  font-weight: 700;
   font-size: 1.3rem;
 }
 
-.row-2 {
-  flex-direction: column;
-}
-
-.row-2-1 {
-  padding: 1em;
+.option-2 {
   display: flex;
-}
-
-.row-2-1 img {
-  margin-right: 1em;
-}
-
-.dots {
   margin-left: auto;
+  margin-right: 1.7em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  align-items: center;
+  font-size: 1.3rem;
+  color: white;
+  background-color: lightblue;
+  padding: 1px 1.2em;
+  border: 1px solid white;
+  border-radius: 2em;
 }
-
-/* Define style for the second flex container
-.row-2 {
-  display: flex;
-}
-*/

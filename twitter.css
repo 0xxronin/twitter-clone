@@ -292,9 +292,10 @@ main {
   display: flex;
 }
 
-.row-2-1 img {
-  margin-right: 1rem;
-  margin-left: 1rem;
+.row-2-1 img,
+.option-1 img,
+.profile-icon img {
+  margin: 0 1rem;
 }
 
 /*Define style for account display name and handle*/
@@ -399,4 +400,68 @@ main {
   padding: 1px 1.2em;
   border: 1px solid white;
   border-radius: 2em;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0;
+}
+
+.profile-container-1 {
+  display: flex;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-details-first-row {
+  display: flex;
+}
+
+.profile-details-first-row > div:not(.against) {
+  padding: 0 0.1em;
+  margin-bottom: 0.3em;
+}
+
+.profile-icon {
+  margin: 0 1em 0 0.5em;
+}
+
+.ola a {
+  text-decoration: none;
+  color: blue;
+}
+
+.zero {
+  margin-top: -0.7em;
+  margin-bottom: -1em;
+}
+
+.triple-dots {
+  margin: 0.5em 1.5em 0 auto;
+}
+
+.profile-container-2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.options {
+  width: 3.5em;
+  display: flex;
+  align-items: center;
+  padding: 0 0.3em;
+  justify-content: space-between;
+}
+
+.zero > p > a {
+  text-decoration: none;
+}
+
+.horizontal {
+  margin-top: 0.5em;
 }
